@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Culturally responsive mental health education and psychosocial support initiatives for immigrant communities, immigrant women, and international students.">
+<meta name="theme-color" content="#163631">
+<meta property="og:title" content="Ainazik Talantbekova | Community Mental Health Education">
+<meta property="og:description" content="Culturally responsive mental health education and institutional capacity building for immigrant communities.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ainaziktalantbekova.github.io/talantbekova.github.io/">
+<meta name="twitter:card" content="summary">
+<link rel="canonical" href="https://ainaziktalantbekova.github.io/talantbekova.github.io/">
+<title>Ainazik Talantbekova | Community Mental Health Education</title>
+<script>document.documentElement.classList.add("js")</script>
+<style>
+:root{
+  --ink:#163631;
+  --green:#245f55;
+  --sage:#dce9e3;
+  --cream:#f7f2e8;
+  --paper:#fffdf9;
+  --clay:#c87959;
+  --clay-text:#8b4632;
+  --gold:#efcf79;
+  --muted:#596762;
+  --line:#d9e1dd;
+  --white:#fff;
+  --max:1180px;
+  --radius:26px;
+  --shadow:0 22px 55px rgba(22,54,49,.12);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{
+  margin:0;
+  color:var(--ink);
+  background:var(--paper);
+  font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.65;
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--clay-text);outline-offset:4px}
+.skip-link{
+  position:fixed;left:18px;top:12px;z-index:100;
+  padding:11px 16px;border-radius:10px;background:var(--white);color:var(--ink);
+  font-weight:800;box-shadow:var(--shadow);transform:translateY(-160%);
+}
+.skip-link:focus{transform:translateY(0)}
+.scroll-progress{
+  position:fixed;left:0;top:0;z-index:80;height:3px;width:100%;
+  transform:scaleX(0);transform-origin:left;background:var(--clay);
+}
+.wrap{width:min(calc(100% - 40px),var(--max));margin:auto}
+.topbar{
+  background:var(--ink);color:#fff;text-align:center;
+  padding:9px 18px;font-size:.82rem;font-weight:700;letter-spacing:.035em;
+}
+header{
+  position:sticky;top:0;z-index:30;
+  background:rgba(255,253,249,.94);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line);
+}
+nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{font-family:Georgia,serif;font-size:1.18rem;font-weight:700}
+.brand small{
+  display:block;font-family:Arial,sans-serif;font-size:.62rem;
+  text-transform:uppercase;letter-spacing:.14em;color:var(--muted)
+}
+.links{display:flex;align-items:center;gap:24px;font-size:.88rem;font-weight:700}
+.links>a:not(.button){position:relative;padding:8px 0}
+.links>a:not(.button):after{
+  content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;
+  background:var(--clay-text);transform:scaleX(0);transition:transform .2s ease;
+}
+.links>a:hover:after,.links>a.active:after{transform:scaleX(1)}
+.button{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-height:52px;padding:0 24px;border-radius:999px;
+  background:var(--green);border:1px solid var(--green);
+  color:#fff;font-weight:800;transition:background .2s,color .2s,box-shadow .2s;
+}
+.button:hover{background:var(--ink);box-shadow:0 10px 24px rgba(22,54,49,.18)}
+.button.light{background:transparent;color:var(--green)}
+.menu{display:none;border:0;background:transparent;font-size:1.45rem;cursor:pointer}
+.hero{background:var(--cream);overflow:hidden}
+.hero-grid{
+  min-height:680px;display:grid;grid-template-columns:1.08fr .92fr;
+  align-items:center;gap:62px;padding:72px 0;
+}
+.kicker{
+  text-transform:uppercase;letter-spacing:.15em;font-size:.73rem;
+  font-weight:900;color:var(--clay-text)
+}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;line-height:1.08;margin:0}
+h1{font-size:clamp(3.3rem,6vw,5.8rem);letter-spacing:-.045em;margin-top:18px;max-width:850px}
+h2{font-size:clamp(2.3rem,4.7vw,4.25rem);letter-spacing:-.045em}
+h3{font-size:1.5rem}
+.hero p{font-size:1.1rem;color:#556b65;max-width:680px;margin:24px 0 0}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.micro{display:flex;gap:18px;flex-wrap:wrap;margin-top:28px;font-size:.85rem;font-weight:700;color:#536761}
+.micro span:before{content:"•";color:var(--clay);margin-right:8px}
+.hero-art{position:relative;min-height:540px}
+.circle{position:absolute;border-radius:50%}
+.circle.one{width:155px;height:155px;background:var(--gold);right:0;top:2%}
+.circle.two{width:120px;height:120px;background:var(--clay);left:0;bottom:2%}
+.arch{
+  position:absolute;inset:0 8% 0 6%;
+  border-radius:240px 240px 30px 30px;
+  overflow:hidden;box-shadow:var(--shadow);background:var(--sage);
+}
+.arch:after{content:"";position:absolute;inset:0;background:rgba(22,54,49,.08)}
+.arch img{width:100%;height:100%;object-fit:cover}
+.note{
+  position:absolute;right:0;bottom:8%;
+  max-width:285px;background:rgba(255,255,255,.94);
+  padding:22px;border-radius:18px;box-shadow:var(--shadow)
+}
+.note strong{display:block;font-family:Georgia,serif;font-size:1.1rem}
+.note span{display:block;font-size:.79rem;color:var(--muted);margin-top:6px}
+section{padding:105px 0}
+.center{text-align:center;max-width:900px;margin:auto}
+.center p{max-width:760px;margin:22px auto 0;color:var(--muted);font-size:1.08rem}
+.problem-grid,.program-grid,.impact-grid,.step-grid{display:grid;gap:20px;margin-top:48px}
+.problem-grid{grid-template-columns:repeat(3,1fr)}
+.card{
+  padding:31px;border:1px solid var(--line);border-radius:var(--radius);background:#fff;
+  transition:border-color .2s,box-shadow .2s
+}
+.card:hover{border-color:#b8cbc3;box-shadow:0 14px 36px rgba(22,54,49,.08)}
+.card .icon{
+  width:50px;height:50px;display:grid;place-items:center;border-radius:50%;
+  background:var(--sage);font-weight:900;margin-bottom:18px
+}
+.card p{color:var(--muted)}
+.mission{background:var(--green);color:#fff}
+.mission-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:80px;align-items:start}
+.mission .kicker{color:var(--gold)}
+.mission h2{position:sticky;top:140px}
+.mission-copy{font-family:Georgia,serif;font-size:clamp(1.55rem,3vw,2.25rem);line-height:1.4}
+.mission-copy p{font-family:Arial,sans-serif;font-size:1rem;color:rgba(255,255,255,.8)}
+.program-grid{grid-template-columns:1fr 1fr}
+.program{
+  min-height:300px;padding:36px;border-radius:var(--radius);
+  background:var(--cream);display:flex;flex-direction:column;justify-content:space-between
+}
+.program:nth-child(2),.program:nth-child(3){background:var(--sage)}
+.program .num{font-size:.78rem;font-weight:900;letter-spacing:.14em;color:var(--clay-text)}
+.program p{color:var(--muted);max-width:500px}
+.about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:72px;align-items:center}
+.about-photo{
+  min-height:590px;border-radius:30px;
+  box-shadow:var(--shadow);position:relative;overflow:hidden;background:var(--sage)
+}
+.about-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo-label{
+  position:absolute;left:24px;bottom:24px;background:#fff;
+  border-radius:14px;padding:15px 18px;font-weight:800
+}
+.about-copy p{color:var(--muted);font-size:1.04rem}
+.credentials{display:grid;gap:11px;margin:25px 0}
+.credentials div{background:var(--cream);padding:13px 15px;border-radius:12px;font-weight:700}
+.impact{background:var(--cream)}
+.impact-grid{grid-template-columns:repeat(4,1fr)}
+.impact-card{padding:26px;border-top:2px solid var(--green)}
+.impact-card strong{font-family:Georgia,serif;font-size:2.8rem;color:var(--clay-text)}
+.impact-card p{color:var(--muted)}
+.step-grid{grid-template-columns:repeat(3,1fr)}
+.step{padding:28px;border-top:2px solid var(--green)}
+.step span{display:block;font-family:Georgia,serif;font-size:3.3rem;color:var(--clay)}
+.step p{color:var(--muted)}
+.partners{background:var(--ink);color:#fff}
+.partner-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:42px}
+.partner{padding:24px;border:1px solid rgba(255,255,255,.18);border-radius:18px}
+.partner p{color:rgba(255,255,255,.72);font-size:.9rem}
+.contact{background:var(--gold)}
+.contact-grid{display:grid;grid-template-columns:1fr .72fr;gap:52px;align-items:center}
+.contact-card{background:#fff;padding:30px;border-radius:24px;box-shadow:var(--shadow)}
+.contact-card p{color:var(--muted)}
+footer{background:var(--ink);color:#fff;padding:36px 0}
+.footer{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}
+.footer p{max-width:650px;color:rgba(255,255,255,.66);font-size:.78rem}
+.boundary{
+  margin-top:20px;padding-left:16px;border-left:3px solid var(--clay-text);
+  color:#4f5f5a;font-size:.88rem
+}
+.reveal{opacity:1;transform:none}
+.js .reveal{
+  opacity:0;transform:translateY(14px);
+  transition:opacity .5s ease,transform .5s ease;
+}
+.js .reveal.is-visible{opacity:1;transform:none}
+@media(max-width:920px){
+  .links{
+    position:absolute;display:none;top:calc(100% + 10px);left:20px;right:20px;
+    background:#fff;padding:24px;border-radius:18px;box-shadow:var(--shadow);
+    flex-direction:column;align-items:stretch
+  }
+  .links.open{display:flex}.menu{display:block}
+  .hero-grid,.mission-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+  .mission h2{position:static}
+  .problem-grid,.step-grid,.impact-grid{grid-template-columns:1fr 1fr}
+  .partner-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .wrap{width:min(calc(100% - 28px),var(--max))}
+  section{padding:78px 0}.hero-grid{padding:55px 0}.hero-art{min-height:430px}
+  h1{font-size:3.55rem}
+  .problem-grid,.program-grid,.step-grid,.impact-grid,.partner-grid{grid-template-columns:1fr}
+  .footer{flex-direction:column}
+  .brand small{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{animation:none!important;transition:none!important}
+  .js .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+<div class="topbar">Building culturally responsive mental health education for stronger institutions and communities</div>
+
+<header>
+  <nav class="wrap">
+    <a class="brand" href="#home">Ainazik Talantbekova<small>Community Mental Health Education & Institutional Capacity Building</small></a>
+    <div class="links" id="links">
+      <a href="#mission">Mission</a>
+      <a href="#programs">Programs</a>
+      <a href="#about">About</a>
+      <a href="#impact">Impact</a>
+      <a href="#partners">Partnerships</a>
+      <a class="button" href="#contact">Connect</a>
+    </div>
+    <button class="menu" id="menu" aria-label="Open menu" aria-controls="links" aria-expanded="false">☰</button>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kicker">Education. Prevention. Collaboration.</div>
+      <h1>Stronger support starts with stronger institutions.</h1>
+      <p>I develop culturally responsive mental health education and psychosocial support initiatives that help educational, nonprofit, and community organizations better serve immigrant communities, with particular emphasis on immigrant women and international students.</p>
+      <div class="actions">
+        <a class="button" href="#programs">Explore the work</a>
+        <a class="button light" href="#about">About Ainazik</a>
+      </div>
+      <div class="micro">
+        <span>Non-clinical education</span>
+        <span>Institutional capacity building</span>
+        <span>Technology-assisted resources</span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="circle one"></div>
+      <div class="circle two"></div>
+      <div class="arch"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="" width="1100" height="900" fetchpriority="high"></div>
+      <div class="note">
+        <strong>A scalable, collaborative approach</strong>
+        <span>Designed to complement licensed professionals and existing behavioral health services.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="center">
+      <div class="kicker">The challenge</div>
+      <h2>Many people need support before they need treatment.</h2>
+      <p>Immigrant women and international students may face cultural adjustment, language barriers, social isolation, unfamiliar institutional systems, stigma, and limited awareness of available resources.</p>
+    </div>
+    <div class="problem-grid">
+      <article class="card"><div class="icon">01</div><h3>Information gaps</h3><p>Reliable mental health education is often difficult to find, understand, or apply across cultural and institutional contexts.</p></article>
+      <article class="card"><div class="icon">02</div><h3>Institutional barriers</h3><p>Schools and community organizations may lack practical frameworks, multilingual materials, and coordinated implementation tools.</p></article>
+      <article class="card"><div class="icon">03</div><h3>Delayed support</h3><p>Stigma and limited mental health literacy can prevent people from recognizing concerns and seeking appropriate professional help early.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="mission" id="mission">
+  <div class="wrap mission-grid">
+    <div>
+      <div class="kicker">The mission</div>
+      <h2>Help institutions become more responsive, informed, and connected.</h2>
+    </div>
+    <div class="mission-copy">
+      “The goal is not to replace clinical care. It is to strengthen the educational and organizational systems that help people recognize needs, understand resources, communicate effectively, and reach appropriate support.”
+      <p>This work brings together psychology, conflict resolution, law, organizational management, education, and responsible technology use to create sustainable, evidence-informed solutions.</p>
+    </div>
+  </div>
+</section>
+
+<section id="programs">
+  <div class="wrap">
+    <div class="kicker">Areas of work</div>
+    <h2>Practical initiatives designed for real institutions.</h2>
+    <div class="program-grid">
+      <article class="program">
+        <div class="num">01 · EDUCATION</div>
+        <div><h3>Culturally responsive learning programs</h3><p>Workshops, curricula, and educational materials that improve mental health literacy, reduce stigma, and make information more accessible.</p></div>
+      </article>
+      <article class="program">
+        <div class="num">02 · IMPLEMENTATION</div>
+        <div><h3>Institutional capacity frameworks</h3><p>Structured guidance that helps universities, nonprofits, and community organizations plan, coordinate, evaluate, and sustain psychosocial support initiatives.</p></div>
+      </article>
+      <article class="program">
+        <div class="num">03 · COMMUNICATION</div>
+        <div><h3>Conflict resolution and psychosocial support</h3><p>Educational strategies that strengthen communication, early intervention, adaptation, and constructive problem-solving.</p></div>
+      </article>
+      <article class="program">
+        <div class="num">04 · TECHNOLOGY</div>
+        <div><h3>Technology-assisted resources</h3><p>Multilingual digital materials and learning tools that expand access while respecting privacy, ethics, and professional boundaries.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-photo">
+      <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="" width="1200" height="900" loading="lazy">
+      <span class="photo-label">Education · Collaboration · Implementation</span>
+    </div>
+    <div class="about-copy">
+      <div class="kicker">About Ainazik</div>
+      <h2>An interdisciplinary background built for complex social challenges.</h2>
+      <p>Ainazik Talantbekova’s academic and professional path integrates psychology, law, economics, conflict resolution, higher education, and business administration.</p>
+      <p>Her experience in psychology research, teaching support, academic planning, institutional coordination, and university administration shaped her belief that sustainable behavioral health solutions require more than clinical expertise alone. They also require clear education, ethical implementation, organizational planning, collaboration, and trust.</p>
+      <div class="credentials">
+        <div>Specialist Degree with Honors in Economic Security</div>
+        <div>Master of Laws (LL.M.)</div>
+        <div>Professional Training in Practical Psychology</div>
+        <div>Professional Training in Mediation and Conflict Resolution</div>
+        <div>MBA, North American University, 2026</div>
+      </div>
+      <a class="button light" href="#contact">Discuss a partnership</a>
+    </div>
+  </div>
+</section>
+
+<section class="impact" id="impact">
+  <div class="wrap">
+    <div class="center">
+      <div class="kicker">Intended impact</div>
+      <h2>From individual awareness to stronger community systems.</h2>
+      <p>The endeavor is designed to create value beyond a single organization by strengthening knowledge, coordination, and implementation capacity across institutions.</p>
+    </div>
+    <div class="impact-grid">
+      <div class="impact-card"><strong>01</strong><h3>Improve literacy</h3><p>Help communities recognize concerns and understand available support earlier.</p></div>
+      <div class="impact-card"><strong>02</strong><h3>Reduce barriers</h3><p>Make information more culturally responsive, practical, and accessible.</p></div>
+      <div class="impact-card"><strong>03</strong><h3>Strengthen systems</h3><p>Give institutions tools to plan and sustain coordinated support initiatives.</p></div>
+      <div class="impact-card"><strong>04</strong><h3>Expand reach</h3><p>Develop scalable models and digital resources that can be adapted across communities.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="center">
+      <div class="kicker">How the work advances</div>
+      <h2>A disciplined path from research to implementation.</h2>
+    </div>
+    <div class="step-grid">
+      <div class="step"><span>01</span><h3>Assess</h3><p>Identify institutional needs, barriers, community priorities, and available support systems.</p></div>
+      <div class="step"><span>02</span><h3>Design</h3><p>Develop evidence-informed educational frameworks, materials, and implementation strategies.</p></div>
+      <div class="step"><span>03</span><h3>Collaborate</h3><p>Work with educators, psychologists, nonprofits, researchers, community leaders, and technology professionals.</p></div>
+      <div class="step"><span>04</span><h3>Implement</h3><p>Launch programs and tools through educational, nonprofit, and community institutions.</p></div>
+      <div class="step"><span>05</span><h3>Evaluate</h3><p>Use feedback, research, and measurable outcomes to refine the work continuously.</p></div>
+      <div class="step"><span>06</span><h3>Scale</h3><p>Adapt successful approaches for broader institutional and community use across the United States.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="partners" id="partners">
+  <div class="wrap">
+    <div class="center">
+      <div class="kicker">Collaboration</div>
+      <h2>Built to complement—not duplicate—existing expertise.</h2>
+      <p style="color:rgba(255,255,255,.74)">The work depends on interdisciplinary partnerships and responsible coordination.</p>
+    </div>
+    <div class="partner-grid">
+      <div class="partner"><h3>Universities & colleges</h3><p>Student support, adaptation, education, prevention, and referral awareness.</p></div>
+      <div class="partner"><h3>Nonprofit organizations</h3><p>Community outreach, culturally responsive education, and program delivery.</p></div>
+      <div class="partner"><h3>Mental health professionals</h3><p>Scientific guidance, ethical boundaries, referral pathways, and best practices.</p></div>
+      <div class="partner"><h3>Technology specialists</h3><p>Responsible digital tools, multilingual access, privacy, and scalable delivery.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="kicker">Connect</div>
+      <h2>Interested in education, research, or institutional collaboration?</h2>
+    </div>
+    <div class="contact-card">
+      <h3>Start a conversation</h3>
+      <p>For partnership discussions, educational initiatives, community programs, research collaboration, or institutional planning.</p>
+      <a class="button" href="mailto:ainaziktalantbekova8@gmail.com">Contact Ainazik</a>
+      <p><strong>Email:</strong> ainaziktalantbekova8@gmail.com<br><strong>Location:</strong> Kirkland, Washington</p>
+      <p class="boundary">Educational and organizational work only; this website does not provide clinical care or individualized mental health services.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap footer">
+    <div><strong>Ainazik Talantbekova</strong><p>Community Mental Health Education · Institutional Capacity Building · Interdisciplinary Collaboration</p></div>
+    <p>This website describes non-clinical educational and organizational initiatives. It does not offer psychotherapy, diagnosis, crisis intervention, or individualized mental health treatment. Any future programs should be developed in collaboration with appropriately licensed professionals and applicable institutional partners.</p>
+  </div>
+</footer>
+
+<script>
+const menu=document.getElementById("menu");
+const links=document.getElementById("links");
+const navLinks=[...document.querySelectorAll("#links a[href^='#']")];
+const progress=document.getElementById("scroll-progress");
+
+function setMenu(open,returnFocus=false){
+  links.classList.toggle("open",open);
+  menu.textContent=open?"✕":"☰";
+  menu.setAttribute("aria-expanded",String(open));
+  menu.setAttribute("aria-label",open?"Close menu":"Open menu");
+  if(open) navLinks[0]?.focus();
+  if(!open&&returnFocus) menu.focus();
+}
+
+menu.addEventListener("click",()=>setMenu(!links.classList.contains("open")));
+navLinks.forEach(link=>link.addEventListener("click",()=>setMenu(false)));
+document.addEventListener("keydown",event=>{
+  if(event.key==="Escape"&&links.classList.contains("open")) setMenu(false,true);
+});
+document.addEventListener("click",event=>{
+  if(links.classList.contains("open")&&!links.contains(event.target)&&!menu.contains(event.target)) setMenu(false);
+});
+window.addEventListener("resize",()=>{if(window.innerWidth>920)setMenu(false)});
+
+const sections=navLinks
+  .map(link=>document.querySelector(link.getAttribute("href")))
+  .filter(Boolean);
+const sectionObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(!entry.isIntersecting)return;
+    navLinks.forEach(link=>{
+      const active=link.getAttribute("href")==="#"+entry.target.id;
+      link.classList.toggle("active",active);
+      if(active)link.setAttribute("aria-current","location");
+      else link.removeAttribute("aria-current");
+    });
+  });
+},{rootMargin:"-35% 0px -55% 0px"});
+sections.forEach(section=>sectionObserver.observe(section));
+
+const revealTargets=document.querySelectorAll(
+  ".hero-grid>*,.center,.mission-grid>*,.program,.about-grid>*,.impact-card,.step,.partner,.contact-grid>*"
+);
+revealTargets.forEach(target=>target.classList.add("reveal"));
+const revealObserver=new IntersectionObserver((entries,observer)=>{
+  entries.forEach(entry=>{
+    if(!entry.isIntersecting)return;
+    entry.target.classList.add("is-visible");
+    observer.unobserve(entry.target);
+  });
+},{threshold:.12});
+revealTargets.forEach(target=>revealObserver.observe(target));
+
+function updateProgress(){
+  const scrollable=document.documentElement.scrollHeight-window.innerHeight;
+  const ratio=scrollable>0?window.scrollY/scrollable:0;
+  progress.style.transform=`scaleX(${Math.min(1,Math.max(0,ratio))})`;
+}
+window.addEventListener("scroll",updateProgress,{passive:true});
+updateProgress();
+</script>
+</body>
+</html>
