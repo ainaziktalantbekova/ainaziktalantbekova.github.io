@@ -12,5 +12,5 @@ Open <http://localhost:8000>.
 
 ## Publishing
 
-This repository is intended for GitHub Pages at:
-<https://ainaziktalantbekova.github.io/talantbekova.github.io/>
+This repository is published with GitHub Pages at:
+<https://ainaziktalantbekova.github.io/>
